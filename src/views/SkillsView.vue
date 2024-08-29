@@ -1,6 +1,8 @@
 <script setup>
 import headerComponent from '@/components/header/headerComponent.vue';
-import { skillsData } from '@/assets/info';
+import { skillsData } from '@/assets/js/info';
+
+import footerComponent from '@/components/footer/footerComponent.vue';
 </script>
 <template>
 
@@ -14,7 +16,9 @@ import { skillsData } from '@/assets/info';
         <p>{{ skill.content }}</p>
     </blockquote>
 </main>
-<footer></footer>
+<footer>
+    <footerComponent/>
+</footer>
 
 </template>
 

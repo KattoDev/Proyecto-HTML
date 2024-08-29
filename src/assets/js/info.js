@@ -131,7 +131,8 @@ export let skillsData = {
     skill3: {
         code: "240201524",
         content:
-            "Desarrollar procesos de comunicación eficaces y efectivos, teniendo en cuenta situaciones de orden social y personal.",
+            "Desarrollar procesos de comunicación eficaces y efectivos, teniendo en cuenta " +
+            "situaciones de orden social y personal.",
     },
     skill4: {
         code: "210201501",
@@ -190,12 +191,10 @@ export let skillsData = {
     },
     skill15: {
         code: "240201530",
-        content:
-            "Resultado del aprendizaje de la inducción.",
+        content: "Resultado del aprendizaje de la inducción.",
     },
     skill16: {
         code: "999999999",
-        content:
-            "Resultados de aprendizaje etapa práctica.",
+        content: "Resultados de aprendizaje etapa práctica.",
     },
 };

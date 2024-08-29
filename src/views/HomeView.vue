@@ -1,10 +1,14 @@
 <script setup>
 import headerComponent from "../components/header/headerComponent.vue";
+
 import bannerComponent from "@/components/main/bannerComponent.vue";
 import navbuttonsComponent from "@/components/main/navbuttonsComponent.vue";
 import justificationComponent from "@/components/main/justificationComponent.vue";
 import tableComponent from "@/components/tableComponent.vue";
 import detailsComponent from "@/components/detailsComponent.vue";
+import formComponent from "@/components/formComponent.vue";
+
+import footerComponent from "@/components/footer/footerComponent.vue";
 
 import {
     formationInfoData,
@@ -12,8 +16,7 @@ import {
     agendaData,
     incomeProfileData,
     methodologiesData,
-} from "@/assets/info";
-
+} from "@/assets/js/info";
 </script>
 
 <template>
@@ -22,6 +25,23 @@ import {
     </header>
 
     <main>
+        <div class="header-info">
+            <p class="title" style="color: red">
+                ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+                [src/assets/css/body-main.css (2:5 -- 19:5)]
+                ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+            </p>
+            <p class="title">
+                DESARROLLO DE VIDEOJUEGOS Y ENTORNOS INTERACTIVOS
+            </p>
+            <div class="subtitle">
+                <p>Nivel de formación: Tecnólogo</p>
+            </div>
+            <p class="title" style="color: red">
+                ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+            </p>
+        </div>
+
         <bannerComponent />
 
         <h1 class="welcome">
@@ -44,25 +64,33 @@ import {
             <tableComponent :data="formationInfoData" />
         </div>
 
-        <navbuttonsComponent/>
+        <navbuttonsComponent />
 
         <section id="justification">
-            <h1>justificación del programa</h1>
+            <div class="topic">
+                <h1>justificación del programa</h1>
+            </div>
             <justificationComponent />
         </section>
 
         <section id="agenda">
-            <h1>Temario de la formación</h1>
+            <div class="topic">
+                <h1>Temario de la formación</h1>
+            </div>
             <detailsComponent :data="agendaData" />
         </section>
 
         <section id="profiles">
             <div id="income-profile">
-                <h1>Perfil de ingreso</h1>
+                <div class="topic">
+                    <h1>Perfil de ingreso</h1>
+                </div>
                 <tableComponent :data="incomeProfileData" />
             </div>
             <div id="graduation-profile">
-                <h1>Perfil de egreso</h1>
+                <div class="topic">
+                    <h1>Perfil de egreso</h1>
+                </div>
                 <p>
                     El tecnólogo en desarrollo de videojuegos y entornos
                     interactivos está capacitado para generar el código que
@@ -79,7 +107,9 @@ import {
                     necesidades del mercado, promoviendo el trabajo en equipo y
                     el respeto en el ámbito laboral y profesional.
                 </p>
-                <h1>Principales productos del trabajo del egresado</h1>
+                <div class="topic">
+                    <h1>Principales productos del trabajo del egresado</h1>
+                </div>
                 <ul>
                     <li v-for="product in productsData">{{ product }}</li>
                 </ul>
@@ -87,7 +117,10 @@ import {
         </section>
 
         <section id="methodology">
-            <h1>Estrategia metodológica</h1>
+            <div class="topic">
+
+                <h1>Estrategia metodológica</h1>
+            </div>
             <p>
                 Centrada en la construcción de autonomía para garantizar la
                 calidad de la formación en el marco de la formación por
@@ -112,5 +145,11 @@ import {
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div id="inscription">
+            <formComponent />
+        </div>
+
+        <footerComponent />
+    </footer>
 </template>

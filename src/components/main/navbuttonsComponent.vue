@@ -1,5 +1,5 @@
 <script setup>
-import { goto } from "@/assets/buttons";
+import { goto } from "@/assets/js/buttons";
 </script>
 
 <template>

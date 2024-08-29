@@ -11,6 +11,14 @@ const router = createRouter({
     {
       path: '/competencias',
       component: () => import('@/views/SkillsView.vue')
+    },
+    {
+      path: '/the-forbiden',
+      component: () => import('@/views/TheForbiden.vue')
+    },
+    {
+      path: '/development/information',
+      component: () => import('@/views/InformationView.vue')
     }
   ]
 })

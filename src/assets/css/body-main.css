@@ -1,0 +1,227 @@
+main {
+    /*
+    .header-info {
+        background-color: var(--page-sena-light);
+
+        .title {
+            padding: 20px;
+        }
+        .subtitle {
+            padding: 20px;
+            background-color: var(--page-sena-medium);
+            font-size: 25px;
+
+            p {
+                margin-right: 5%;
+            }
+        }
+    }
+    */
+
+    .topic {
+        justify-content: flex-start;
+        background-color: var(--toolbar);
+        font-size: 16px;
+        padding: 11.2px 27.2px;
+        color: var(--background);
+    }
+
+    section {
+        margin-top: 100px;
+    }
+    .banner {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 40px;
+        img {
+            width: 1200px;
+            height: 628px;
+        }
+    }
+
+    .welcome,
+    summary {
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 50px;
+    }
+
+    .info {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .info-text {
+            max-width: 500px;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        .table-container {
+            padding: 100px 0px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-collapse: collapse;
+
+            .table-head {
+                font-weight: bold;
+            }
+
+            td {
+                border: 1px solid black;
+                padding: 10px;
+                font-family: "Josefin Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: normal;
+                font-style: normal;
+            }
+        }
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+
+        button {
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            padding: 10px;
+
+            font-size: 50px;
+
+            border-radius: 10px;
+            border-color: transparent;
+
+            background-color: var(--toolbar);
+
+            color: var(--background);
+
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        :hover {
+            background-color: var(--background-indent);
+        }
+
+        :active {
+            background-color: var(--button-color-click);
+        }
+    }
+
+    #justification {
+        .justifications {
+            display: flex;
+
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+
+            font-size: 25px;
+        }
+
+        .case {
+            max-width: 50%;
+            padding: 20px;
+
+            #ofer-name {
+                background-color: brown;
+            }
+        }
+    }
+    #agenda {
+        background-color: var(--background-color-alt-light);
+        details {
+            margin-left: 20px;
+            transition: background-color 0.6s ease-in-out;
+            margin: 10px 20px 0 20px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        [open] {
+            border: 1px solid var(--page-indent-alt);
+            border-radius: 20px;
+            background-color: var(--page-indent);
+        }
+    }
+
+    #profiles {
+        display: flex;
+        gap: 30px;
+        #income-profile,
+        #graduation-profile {
+            h1 {
+                margin: 20px;
+            }
+
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        #income-profile {
+            background-color: var(--page-sena-light);
+            border-radius: 10px;
+        }
+        #graduation-profile {
+            background-color: var(--page-sena-medium);
+            border-radius: 10px;
+        }
+    }
+
+    .cat {
+        background-color: blue;
+    }
+
+    #table-container {
+        display: flex;
+        justify-content: center;
+        margin: 60px;
+
+        #register-table-info {
+            background-color: var(--background-color-alt-light);
+            border-collapse: collapse;
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            tr:hover {
+                background-color: var(--page-indent);
+            }
+        }
+    }
+
+    #buttons-container {
+        display: flex;
+        justify-content: end;
+        margin-right: 10%;
+
+        button {
+            padding: 10px;
+            border: 1px solid var(--background-color-alt-dark);
+            background-color: var(--background-color-alt-light);
+            border-radius: 5px;
+        }
+        :hover {
+            background-color: var(--page-indent);
+        }
+
+        :active {
+            background-color: var(--page-indent-alt);
+        }
+    }
+}

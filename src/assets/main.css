@@ -1,0 +1,68 @@
+@import "./css/body-header.css";
+@import "./css/body-main.css";
+@import "./css/body-footer.css";
+
+@property --background {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff;
+}
+@property --background-alt {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #e6e6e6;
+}
+@property --banner {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #3366cc;
+}
+@property --toolbar {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #04324d;
+}
+@property --button {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #fbad20;
+}
+@property --background-indent {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #39a900;
+}
+
+* {
+        margin: 0;
+}
+
+#app {
+    display: grid;
+    min-height: 100vw;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--background);
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    .😺 {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+}
+
+.gov{
+    background-color: var(--banner);
+    padding: 8px 24px;
+
+    .gov-logo{
+        width: auto;
+        height: 24px;
+    }
+}

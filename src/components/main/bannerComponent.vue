@@ -5,7 +5,7 @@
     <div class="banner">
         <img
             class="banner"
-            src="../../assets/placeholder/placeholder.jpeg"
+            src="../../assets/images/indies-april-2023.jpg"
             alt="banner"
         />
     </div>

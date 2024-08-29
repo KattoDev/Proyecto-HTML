@@ -19,16 +19,19 @@
             </p>
             <img
                 class="image"
-                src="../../assets/placeholder/placeholder.jpeg"
-                alt="placeholder"
+                src="../../assets/images/Game-Dev-Story-Tipps-und-Tricks.webp"
+                alt="GameDevStory"
+                width="100%"
             />
+            <p>juego: <a href="https://store.steampowered.com/app/1847240/Game_Dev_Story/">Game Dev Story</a></p>
         </div>
         <div class="case">
             <img
                 class="image"
-                src="../../assets/placeholder/placeholder.jpeg"
-                alt="placeholder"
+                src="../../assets/images/profile_banner-480.png"
+                alt="GameDevDays"
             />
+            <p>Game Dev Days showcase</p>
             <p class="case2">
                 Dadas las proyecciones, después de 2016 el problema de la
                 escasez de talento de TI crece exponencialmente y no puede

@@ -21,3 +21,19 @@ export let goto = {
             .getElementById("methodology")
             .scrollIntoView({ behavior: "smooth" }),
 };
+
+export class catDoStuff {
+    constructor() {
+        this.windowRef = null;
+    }
+    mew() {
+        this.windowRef = window.open("/the-forbiden");
+        setTimeout(() => {
+            this.windowRef.close();
+        }, 1200);
+    }
+}
+
+export function printPage() {
+    setTimeout(window.print(), 3000);
+}

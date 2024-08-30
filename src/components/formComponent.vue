@@ -1,6 +1,10 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
+    <video id="demo-video" autoplay loop="true">
+        <source src="../assets/videos/demo.mp4">
+    </video>
     <p>¿Qué piensas? ¿Interesado en esta formación?</p>
     <p>¡Inscribete aqui!</p>
     <form action="" method="post">

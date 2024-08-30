@@ -1,4 +1,5 @@
 <script setup>
+
 import { catDoStuff } from "@/assets/js/buttons";
 
 let cds = new catDoStuff();
@@ -50,21 +51,21 @@ let cds = new catDoStuff();
                         >Titulada</a
                     >
                 </li>
-                <hr>
+                <hr />
                 <li>
                     <a
                         href="https://comunidades.netlab-sena.net/comunidad-aprendices"
                         >Comunidad aprendices</a
                     >
                 </li>
-                <hr>
+                <hr />
                 <li>
                     <a
                         href="https://comunidades.netlab-sena.net/comunidad-instructores"
                         >Comunidad instructores</a
                     >
                 </li>
-                <hr>
+                <hr />
                 <li>
                     <a href="https://zajuna.sena.edu.co/campesena.php"
                         >Comunidad campesina</a

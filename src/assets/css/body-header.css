@@ -1,7 +1,5 @@
 header {
 
-    
-
     .banner-sena{
         display: flex;
         align-items: center;
@@ -17,12 +15,12 @@ header {
     }
 
     .navbar {
-        background-color: var(--toolbar);
+        background-color: var(--blue3);
 
         
         .nav-links {
             
-            color: var(--background);
+            color: var(--peach3);
             
             
             font-size: 14.4px;
@@ -39,13 +37,13 @@ header {
             text-decoration: none;
         }
         :visited{
-            color: var(--background);
+            color: var(--peach3);
         }
         :not(:visited){
-            color: var(--background);
+            color: var(--peach3);
         }
         :hover{
-            color: var(--background-indent);
+            color: var(--green3);
         }
         button{
             background-color: transparent;
@@ -53,7 +51,7 @@ header {
             transition: background-color .3s ease-in;
         }
         button:hover{
-            background-color: var(--button);
+            background-color: var(--yellow2);
             cursor: cell;
         }
     }

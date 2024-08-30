@@ -1,18 +1,15 @@
-@import "../main.css";
-
 footer {
     justify-content: center;
     align-items: center;
     margin-top: 200px;
 
     #inscription {
-        background-color: var(--background-alt);
+        background-color: var(--pure4);
         padding: 60px;
         border-radius: 40px;
-        max-width: 600px;
 
         p {
-            color: var(--toolbar);
+            color: var(--blue1);
         }
 
         form {
@@ -22,47 +19,59 @@ footer {
             gap: 20px;
 
             label {
-                color: var(--background-indent);
+                color: var(--green3);
             }
 
             input {
-                min-height: 30px;
+                padding: 10px;
                 border: none;
                 border-radius: 10px;
             }
+
             button {
-                color: var(--background);
-                background-color: var(--background-indent);
-                max-width: 200px;
-                min-height: 30px;
+                color: var(--peach3);
+                background-color: var(--green3);
+                padding: 10px;
                 border-radius: 60px;
                 border: none;
+
+                transition: border 0.3s ease-in-out;
+                transition: background-color 0.3s ease-in-out;
+            }
+
+            button:hover {
+                border: 1px solid white;
+                background-color: var(--blue3);
+                color: var(--green3);
             }
         }
     }
 
-    .governance{
-
-        .gov-links-container{
-            background-color: var(--toolbar);
+    .governance {
+        .gov-links-container {
+            background-color: var(--blue3);
             display: grid;
             gap: 6px;
             padding: 48px 27.2px;
             grid-template-columns: repeat(7, 1fr);
 
-            .links{
+            .links {
                 display: flex;
                 flex-direction: column;
                 font-size: 16px;
-                a{
+
+                a {
                     text-decoration: none;
                 }
-                :visited{
-                    color: var(--background);
+
+                :visited {
+                    color: var(--peach3);
                 }
-                :not(:visited){
-                    color: var(--background);
+
+                :not(:visited) {
+                    color: var(--peach3);
                 }
+
                 :hover {
                     text-decoration: underline;
                 }
@@ -70,24 +79,26 @@ footer {
         }
     }
 
-    .more-info{
+    .more-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        color: var(--toolbar);
+        color: var(--blue3);
         padding: 48px 27.2px;
         font-size: 12px;
 
-        a{
-            color: var(--toolbar);
+        a {
+            color: var(--blue3);
         }
-        :visited{
-            color: var(--toolbar);
+
+        :visited {
+            color: var(--blue3);
         }
-        :not(:visited){
-            color: var(--toolbar);
+
+        :not(:visited) {
+            color: var(--blue3);
         }
-        
-        img{
+
+        img {
             width: 338.27px;
             height: 125px;
         }

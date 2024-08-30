@@ -1,67 +1,91 @@
-main {
-    /*
-    .header-info {
-        background-color: var(--page-sena-light);
+.header-info {
+    position: sticky;
+    top: 0;
+    background-color: var(--green4);
 
-        .title {
-            padding: 20px;
-        }
-        .subtitle {
-            padding: 20px;
-            background-color: var(--page-sena-medium);
-            font-size: 25px;
+    .title {
+        padding: 20px;
+        font-size: 40px;
+        
+    }
+    .subtitle {
+        text-align: end;
+        background-color: var(--green5);
+        font-size: 20px;
 
-            p {
-                margin-right: 5%;
-            }
+        p{
+            margin-right: 50px;
         }
     }
-    */
+}
 
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+    justify-content: center;
+    background-color: var(--blue3);
+
+    button {
+        font-size: 20px;
+        border-radius: 10px;
+        border-color: transparent;
+
+        background-color: var(--blue3);
+
+        color: var(--peach3);
+
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    :hover {
+        background-color: var(--green3);
+    }
+}
+
+main {
     .topic {
         justify-content: flex-start;
-        background-color: var(--toolbar);
+        background-color: var(--blue3);
         font-size: 16px;
         padding: 11.2px 27.2px;
-        color: var(--background);
+        color: var(--peach3);
     }
+
+    
 
     section {
         margin-top: 100px;
     }
+    
+    section:before{
+        background-color: var(--blue3);
+        content: "";
+        display: block;
+        height: 149px;
+        margin-top: -149px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
     .banner {
         display: flex;
         justify-content: center;
         margin: 40px 0 40px;
         img {
-            width: 1200px;
+            width: 1000px;
             height: 628px;
         }
     }
 
-    .welcome,
-    summary {
-        font-family: "Jersey 10", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-
-        font-size: 50px;
-    }
-
+    
     .info {
-        margin-top: 200px;
-        display: flex;
+        margin: 100px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         gap: 50px;
-
-        .info-text {
-            max-width: 500px;
-            font-family: "Josefin Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 25px;
-        }
 
         .table-container {
             padding: 100px 0px 100px;
@@ -77,96 +101,68 @@ main {
             td {
                 border: 1px solid black;
                 padding: 10px;
-                font-family: "Josefin Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: normal;
-                font-style: normal;
             }
-        }
-    }
-
-    .nav-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-
-        button {
-            font-family: "Jersey 10", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-
-            padding: 10px;
-
-            font-size: 50px;
-
-            border-radius: 10px;
-            border-color: transparent;
-
-            background-color: var(--toolbar);
-
-            color: var(--background);
-
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        :hover {
-            background-color: var(--background-indent);
-        }
-
-        :active {
-            background-color: var(--button-color-click);
         }
     }
 
     #justification {
         .justifications {
-            display: flex;
-
-            font-family: "Josefin Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
-            font-style: normal;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
             font-size: 25px;
         }
 
         .case {
-            max-width: 50%;
             padding: 20px;
 
+            .image {
+                display: grid;
+                text-align: center;
+                margin: 20px;
+                img {
+                    width: 600px;
+                }
+            }
             #ofer-name {
-                background-color: brown;
+                color: var(--green3);
             }
         }
     }
+
     #agenda {
-        background-color: var(--background-color-alt-light);
+
         details {
+            padding: 20px;
             margin-left: 20px;
             transition: background-color 0.6s ease-in-out;
-            margin: 10px 20px 0 20px;
-            padding: 20px;
             border-radius: 20px;
+
+            p,
+            ul {
+                margin-left: 60px;
+            }
         }
 
         [open] {
-            border: 1px solid var(--page-indent-alt);
+            border: 1px solid var(--copper1);
             border-radius: 20px;
-            background-color: var(--page-indent);
+            background-color: var(--copper2);
         }
     }
 
-    #profiles {
-        display: flex;
+    .profiles-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+
         #income-profile,
         #graduation-profile {
             h1 {
                 margin: 20px;
             }
 
-            max-width: 50%;
+            /* min-width: 50%; */
             padding: 20px;
         }
 
@@ -174,14 +170,11 @@ main {
             background-color: var(--page-sena-light);
             border-radius: 10px;
         }
+
         #graduation-profile {
             background-color: var(--page-sena-medium);
             border-radius: 10px;
         }
-    }
-
-    .cat {
-        background-color: blue;
     }
 
     #table-container {

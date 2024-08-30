@@ -2,7 +2,7 @@
 
 <template>
     <div class="justifications">
-        <div class="case">
+        <div class="case work-sans-font">
             <p>
                 En el ámbito internacional, existen estudios que revelan que el
                 déficit de la formación del recurso humano, es una de las
@@ -17,21 +17,30 @@
                 de mano de obra calificada, a un ritmo que puede retrasar su
                 crecimiento, especialmente hacia los mercados externos.
             </p>
-            <img
-                class="image"
-                src="../../assets/images/Game-Dev-Story-Tipps-und-Tricks.webp"
-                alt="GameDevStory"
-                width="100%"
-            />
-            <p>juego: <a href="https://store.steampowered.com/app/1847240/Game_Dev_Story/">Game Dev Story</a></p>
+            <div class="image">
+                <img
+                    src="../../assets/images/Game-Dev-Story-Tipps-und-Tricks.webp"
+                    alt="GameDevStory"
+                    width="100%"
+                />
+                <p>
+                    juego:
+                    <a
+                        href="https://store.steampowered.com/app/1847240/Game_Dev_Story/"
+                        >Game Dev Story</a
+                    >
+                </p>
+            </div>
         </div>
         <div class="case">
-            <img
-                class="image"
-                src="../../assets/images/profile_banner-480.png"
-                alt="GameDevDays"
-            />
-            <p>Game Dev Days showcase</p>
+            <div class="image">
+                <img
+                    src="../../assets/images/profile_banner-480.png"
+                    alt="GameDevDays"
+                />
+                <p>Game Dev Days showcase</p>
+            </div>
+
             <p class="case2">
                 Dadas las proyecciones, después de 2016 el problema de la
                 escasez de talento de TI crece exponencialmente y no puede

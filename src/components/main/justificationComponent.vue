@@ -1,13 +1,13 @@
-<script setup></script>
-
 <template>
     <div class="justifications">
-        <div class="case work-sans-font">
+        <div class="case">
             <p>
                 En el ámbito internacional, existen estudios que revelan que el
                 déficit de la formación del recurso humano, es una de las
                 principales barreras identificadas para el crecimiento de un
-                sector competitivo en los países en desarrollo. <br />
+                sector competitivo en los países en desarrollo.
+            </p>
+            <p>
                 Respecto a esto, en muchas naciones existe una carencia
                 importante de profesionales en desarrollo de videojuegos y
                 especialistas de áreas afines a las Tecnologías de la
@@ -40,12 +40,12 @@
                 />
                 <p>Game Dev Days showcase</p>
             </div>
-
-            <p class="case2">
+            <p>
                 Dadas las proyecciones, después de 2016 el problema de la
                 escasez de talento de TI crece exponencialmente y no puede
                 resolverse fácilmente.
-                <br />
+            </p>
+            <p>
                 Por lo tanto, desde la visión del programa de formación se
                 pretende resolver esta problemática. Lo anterior, demuestra
                 claramente la necesidad existente y futura de formación de
@@ -74,5 +74,3 @@
         </div>
     </div>
 </template>
-
-<style scoped></style>

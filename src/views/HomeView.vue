@@ -45,8 +45,8 @@ import {
         <div class="info">
             <div class="video">
                 <iframe
-                    width="1000"
-                    height="500"
+                    width="700"
+                    height="400"
                     src="https://www.youtube.com/embed/5lPd98N0lOg"
                     title="Información del programa: Tecnología Desarrollo de Videojuegos y Entornos Interactivos"
                     frameborder="0"

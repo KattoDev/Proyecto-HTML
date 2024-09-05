@@ -6,6 +6,12 @@ import router from './router'
 
 const app = createApp(App)
 
+router.beforeEach((to, from, next) => {
+    const title = to.meta.title || 'Default title'
+    document.title = title
+    next()
+})
+
 app.use(router)
 
 app.mount('#app')

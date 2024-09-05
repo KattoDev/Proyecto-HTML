@@ -57,7 +57,7 @@ export let agendaData = {
             "La mecanica del juego",
             "Niveles",
             "Personajes",
-            "historia y elementos visuales, teniendo en cuenta la jugabilidad y" +
+            "historia y elementos visuales, teniendo en cuenta la jugabilidad y " +
                 "la experiencia del usuario.",
         ],
     },

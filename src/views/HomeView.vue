@@ -4,6 +4,7 @@ import headerComponent from "../components/header/headerComponent.vue";
 import bannerComponent from "@/components/main/bannerComponent.vue";
 import navbuttonsComponent from "@/components/main/navbuttonsComponent.vue";
 import justificationComponent from "@/components/main/justificationComponent.vue";
+
 import tableComponent from "@/components/tableComponent.vue";
 import detailsComponent from "@/components/detailsComponent.vue";
 import formComponent from "@/components/formComponent.vue";
@@ -17,6 +18,7 @@ import {
     incomeProfileData,
     methodologiesData,
 } from "@/assets/js/info";
+
 </script>
 
 <template>
@@ -29,18 +31,14 @@ import {
         <div class="subtitle">
             <p>Nivel de formación: Tecnólogo</p>
         </div>
-        <nav class="buttons">
-            <navbuttonsComponent />
-        </nav>
+    </div>
+
+    <div id="page-nav">
+        <navbuttonsComponent />
     </div>
 
     <main>
         <bannerComponent />
-
-        <h1 class="welcome">
-            ¡Te damos la bienvenida a Desarrollo de videojuegos y entornos
-            interactivos!
-        </h1>
 
         <div class="info">
             <div class="video">
@@ -149,7 +147,9 @@ import {
 
     <footer>
         <div id="inscription">
-            <formComponent />
+            <div id="form">
+                <formComponent />
+            </div>
         </div>
 
         <footerComponent />

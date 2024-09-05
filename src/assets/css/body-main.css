@@ -1,6 +1,5 @@
 .header-info {
-    position: sticky;
-    top: 0;
+    color: var(--blue3);
     background-color: var(--green4);
 
     .title {
@@ -18,28 +17,30 @@
     }
 }
 
-.nav-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    gap: 10px;
-    justify-content: center;
+#page-nav {
+    position: sticky;
+    top: 0;
     background-color: var(--blue3);
 
-    button {
-        font-size: 20px;
-        border-radius: 10px;
-        border-color: transparent;
+    .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        gap: 10px;
+        justify-content: center;
 
-        background-color: var(--blue3);
+        button {
+            font-size: 20px;
+            border-radius: 10px;
+            border-color: transparent;
+            background-color: var(--blue3);
+            color: var(--peach3);
+            transition: background-color 0.3s ease-in-out;
+        }
 
-        color: var(--peach3);
-
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    :hover {
-        background-color: var(--green3);
+        :hover {
+            background-color: var(--green3);
+        }
     }
 }
 
@@ -60,16 +61,18 @@ main {
         background-color: var(--blue3);
         content: "";
         display: block;
-        height: 149px;
-        margin-top: -149px;
+        height: 41px;
+        margin-top: -41px;
         visibility: hidden;
         opacity: 0;
     }
 
     .banner {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin: 40px 0 40px;
+
         img {
             width: 1000px;
             height: 628px;
@@ -77,7 +80,7 @@ main {
     }
 
     .info {
-        margin: 100px 0px;
+        margin: 100px 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -102,16 +105,19 @@ main {
     }
 
     #justification {
+
         display: flex;
         flex-direction: column;
+
         .justifications {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .case {
             padding: 20px;
+
             .image {
                 display: flex;
                 align-items: center;
@@ -132,6 +138,7 @@ main {
 
     #agenda {
         details {
+            margin: 5px;
             padding: 20px;
             margin-left: 20px;
             transition: background-color 0.6s ease-in-out;
@@ -139,44 +146,62 @@ main {
 
             p,
             ul {
-                margin-left: 60px;
+                margin-left: 40px;
             }
-        }
-
-        [open] {
-            border: 1px solid var(--copper1);
-            border-radius: 20px;
-            background-color: var(--copper2);
         }
     }
 
     .profiles-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+        gap: 10px;
 
         #income-profile,
         #graduation-profile {
+            min-width: 500px;
+            padding: 20px;
+            color: var(--peach3);
             h1 {
                 margin: 20px;
             }
-
-            /* min-width: 50%; */
-            padding: 20px;
         }
 
         #income-profile {
-            background-color: var(--page-sena-light);
+            display: flex;
+            flex-direction: column;
+            background-color: var(--green3);
             border-radius: 10px;
+
+            .table-container {
+                display: flex;
+                justify-content: center;
+                color: var(--blue3);
+            }
         }
 
         #graduation-profile {
-            background-color: var(--page-sena-medium);
+            background-color: var(--green4);
             border-radius: 10px;
+
+            p {
+                margin-left: 40px;
+            }
+
+            p,
+            ul {
+                color: var(--blue3);
+            }
+
+            ul {
+                margin-left: 20px;
+            }
         }
     }
 
-    #table-container {
+    #reg-table-container {
         display: flex;
         justify-content: center;
         margin: 60px;
@@ -214,6 +239,22 @@ main {
 
         :active {
             background-color: var(--page-indent-alt);
+        }
+    }
+
+    .skills{
+        margin-top: 10px;
+
+        blockquote{
+            padding: 50px;
+
+            h3{
+                color: var(--green3);
+            }
+            p{
+                color: var(--blue3);
+                margin-top: 10px;
+            }
         }
     }
 }

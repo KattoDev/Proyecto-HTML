@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
     <div class="governance">
         <div class="gov-links-container">
@@ -140,11 +138,9 @@
     </div>
     <div class="gov">
         <img
-            class="gov-logo"
+            id="gov-logo"
             src="../../assets/images/icons/gov-logo.svg"
             alt="gov logo"
         />
     </div>
 </template>
-
-<style scoped></style>

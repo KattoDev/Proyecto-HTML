@@ -22,5 +22,3 @@ import { goto } from "@/assets/js/buttons";
         </button>
     </nav>
 </template>
-
-<style scoped></style>

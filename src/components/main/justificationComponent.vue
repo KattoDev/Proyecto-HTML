@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
     <div class="justifications">
         <div class="case">
@@ -7,7 +5,9 @@
                 En el ámbito internacional, existen estudios que revelan que el
                 déficit de la formación del recurso humano, es una de las
                 principales barreras identificadas para el crecimiento de un
-                sector competitivo en los países en desarrollo. <br />
+                sector competitivo en los países en desarrollo.
+            </p>
+            <p>
                 Respecto a esto, en muchas naciones existe una carencia
                 importante de profesionales en desarrollo de videojuegos y
                 especialistas de áreas afines a las Tecnologías de la
@@ -17,26 +17,35 @@
                 de mano de obra calificada, a un ritmo que puede retrasar su
                 crecimiento, especialmente hacia los mercados externos.
             </p>
-            <img
-                class="image"
-                src="../../assets/images/Game-Dev-Story-Tipps-und-Tricks.webp"
-                alt="GameDevStory"
-                width="100%"
-            />
-            <p>juego: <a href="https://store.steampowered.com/app/1847240/Game_Dev_Story/">Game Dev Story</a></p>
+            <div class="image">
+                <img
+                    src="../../assets/images/Game-Dev-Story-Tipps-und-Tricks.webp"
+                    alt="GameDevStory"
+                    width="100%"
+                />
+                <p>
+                    juego:
+                    <a
+                        href="https://store.steampowered.com/app/1847240/Game_Dev_Story/"
+                        >Game Dev Story</a
+                    >
+                </p>
+            </div>
         </div>
         <div class="case">
-            <img
-                class="image"
-                src="../../assets/images/profile_banner-480.png"
-                alt="GameDevDays"
-            />
-            <p>Game Dev Days showcase</p>
-            <p class="case2">
+            <div class="image">
+                <img
+                    src="../../assets/images/profile_banner-480.png"
+                    alt="GameDevDays"
+                />
+                <p>Game Dev Days showcase</p>
+            </div>
+            <p>
                 Dadas las proyecciones, después de 2016 el problema de la
                 escasez de talento de TI crece exponencialmente y no puede
                 resolverse fácilmente.
-                <br />
+            </p>
+            <p>
                 Por lo tanto, desde la visión del programa de formación se
                 pretende resolver esta problemática. Lo anterior, demuestra
                 claramente la necesidad existente y futura de formación de
@@ -65,5 +74,3 @@
         </div>
     </div>
 </template>
-
-<style scoped></style>

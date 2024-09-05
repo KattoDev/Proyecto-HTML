@@ -11,10 +11,10 @@ import { goto } from "@/assets/js/buttons";
         <button type="button" v-on:click="goto.skills">
             Competencias a desarrollar
         </button>
-        <button type="button" v-on:click="goto.income">
+        <button type="button" v-on:click="goto.profiles">
             Perfil de ingreso
         </button>
-        <button type="button" v-on:click="goto.graduate">
+        <button type="button" v-on:click="goto.profiles">
             Perfil de egreso
         </button>
         <button type="button" v-on:click="goto.methodology">
@@ -22,5 +22,3 @@ import { goto } from "@/assets/js/buttons";
         </button>
     </nav>
 </template>
-
-<style scoped></style>

@@ -1,10 +1,24 @@
 <script setup>
+import { printPage } from "@/assets/js/buttons";
+import { ref, onMounted } from "vue";
+
 import headerComponent from "@/components/header/headerComponent.vue";
 
-import { printPage } from "@/assets/js/buttons";
-import formComponent from "@/components/formComponent.vue";
-
 import footerComponent from "@/components/footer/footerComponent.vue";
+
+const data = ref([]);
+
+onMounted(async () => {
+    try {
+        const response = await fetch(
+            "http://localhost/projects/proyecto-SENA-v2/src/database/API/getData.php"
+        );
+        if (!response.ok) throw new Error("Error al obtener los datos");
+        data.value = await response.json();
+    } catch (error) {
+        console.error("Error", error);
+    }
+});
 </script>
 
 <template>
@@ -14,53 +28,24 @@ import footerComponent from "@/components/footer/footerComponent.vue";
     </header>
 
     <main>
-        <div id="table-container">
-            <table id="register-table-info">
+        <div id="reg-table-container">
+            <table id="register-table-info" v-if="data.length">
                 <thead>
                     <th>Fecha de inscripción</th>
                     <th>Nombres</th>
                     <th>Apellidos</th>
                     <th>Correo electrónico</th>
-                    <th>Número telefónico</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>0001-01-01 | 01:01:01</td>
-                        <td>nombrenombrenombrenombrenombre 1</td>
-                        <td>apellidoapellidoapellidoapellido 1</td>
-                        <td>correocorreocorreocorreocorreo 1</td>
-                        <td>0000000001</td>
-                    </tr>
-                    <tr>
-                        <td>0002-02-02 | 02:02:02</td>
-                        <td>nombre 2</td>
-                        <td>apellido 2</td>
-                        <td>correo 2</td>
-                        <td>0000000002</td>
-                    </tr>
-                    <tr>
-                        <td>0003-03-03 | 03:03:03</td>
-                        <td>nombre 3</td>
-                        <td>apellido 3</td>
-                        <td>correo 3</td>
-                        <td>0000000003</td>
-                    </tr>
-                    <tr>
-                        <td>0004-04-04 | 04:04:04</td>
-                        <td>nombre 4</td>
-                        <td>apellido 4</td>
-                        <td>correo 4</td>
-                        <td>0000000004</td>
-                    </tr>
-                    <tr>
-                        <td>0005-05-05 | 05:05:05</td>
-                        <td>nombre 5</td>
-                        <td>apellido 5</td>
-                        <td>correo 5</td>
-                        <td>0000000005</td>
+                    <tr v-for="item in data" :key="item.id">
+                        <td>{{ item.time }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.surname }}</td>
+                        <td>{{ item.email }}</td>
                     </tr>
                 </tbody>
             </table>
+            <p v-else>Cargando datos...</p>
         </div>
         <div id="buttons-container">
             <button v-on:click="printPage">exportar como PDF</button>
@@ -68,6 +53,6 @@ import footerComponent from "@/components/footer/footerComponent.vue";
     </main>
 
     <footer>
-        <footerComponent/>
+        <footerComponent />
     </footer>
 </template>

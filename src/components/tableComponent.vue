@@ -14,8 +14,10 @@ let props = defineProps({
                 <td class="header">{{ item.head }}</td>
                 <td>
                     {{ item.content }}
-                    <ul v-if="item.details!=null">
-                        <li v-for="detail in item.details" :key="detail">{{ detail }}</li>
+                    <ul v-if="item.details != null">
+                        <li v-for="detail in item.details" :key="detail">
+                            {{ detail }}
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -26,10 +28,6 @@ let props = defineProps({
 <style scoped>
 table {
     border-collapse: collapse;
-    /**
-     * temporal
-     */
-    margin-bottom: 20px;
 
     .header {
         font-weight: bold;

@@ -8,13 +8,9 @@ export let goto = {
             .getElementById("justification")
             .scrollIntoView({ behavior: "smooth" }),
     skills: () => window.open("/competencias"),
-    income: () =>
+    profiles: () =>
         document
-            .getElementById("income-profile")
-            .scrollIntoView({ behavior: "smooth" }),
-    graduate: () =>
-        document
-            .getElementById("graduation-profile")
+            .getElementById("profiles")
             .scrollIntoView({ behavior: "smooth" }),
     methodology: () =>
         document

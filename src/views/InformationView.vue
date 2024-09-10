@@ -14,7 +14,9 @@ onMounted(async () => {
             "http://localhost/projects/proyecto-SENA-v2/src/database/API/getData.php"
         );
         if (!response.ok) throw new Error("Error al obtener los datos");
-        data.value = await response.json();
+        setTimeout(async () => {
+            data.value = await response.json();
+        }, 3000);
     } catch (error) {
         console.error("Error", error);
     }
@@ -29,7 +31,7 @@ onMounted(async () => {
 
     <main>
         <div id="reg-table-container">
-            <table id="register-table-info" v-if="data.length">
+            <table id="register-table-info" v-if="data.length > 1">
                 <thead>
                     <th>Fecha de inscripción</th>
                     <th>Nombres</th>
@@ -45,7 +47,9 @@ onMounted(async () => {
                     </tr>
                 </tbody>
             </table>
-            <p v-else>Cargando datos...</p>
+            <div v-else>
+                <img src="../assets/images/loading-thinking.gif" alt="" />
+            </div>
         </div>
         <div id="buttons-container">
             <button v-on:click="printPage">exportar como PDF</button>

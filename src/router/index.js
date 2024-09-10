@@ -15,14 +15,19 @@ const router = createRouter({
             meta: { title: "Competencias" },
         },
         {
-            path: "/the-forbiden",
-            component: () => import("@/views/TheForbiden.vue"),
-            meta: { title: "😺" },
-        },
-        {
             path: "/development/information",
             component: () => import("@/views/InformationView.vue"),
             meta: { title: "Registros" },
+        },
+        {
+            path: "/inscripcion",
+            component: () => import("@/views/InscriptionView.vue"),
+            meta: { title: "Inscripcion al curso" },
+        },
+        {
+            path: "/the-forbiden",
+            component: () => import("@/views/TheForbiden.vue"),
+            meta: { title: "😺" },
         },
         {
             path: "/:pathMatch(.*)*",

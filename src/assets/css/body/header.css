@@ -1,0 +1,66 @@
+header {
+    #banner-sena {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1000px;
+        justify-items: center;
+        padding: 16px 24px;
+
+        #zajuna-logo {
+            width: 166.88px;
+            height: auto;
+        }
+
+        #sena-logo {
+            width: 60px;
+        }
+    }
+
+    .navbar {
+        background-color: var(--blue3);
+
+        .nav-links {
+            color: var(--peach3);
+
+            font-size: 14.4px;
+
+            ul {
+                padding: 16px 24px;
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+        :visited {
+            color: var(--peach3);
+        }
+        :not(:visited) {
+            color: var(--peach3);
+        }
+        :hover {
+            color: var(--green3);
+        }
+        button {
+            background-color: transparent;
+            border: none;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        display: flex;
+        justify-content: right;
+        left: 50%;
+    }
+}

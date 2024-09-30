@@ -136,6 +136,10 @@ main {
 
                 label {
                     color: var(--green3);
+
+                    .required{
+                        color: var(--copper1);
+                    }
                 }
 
                 input,

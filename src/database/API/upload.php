@@ -19,7 +19,6 @@ if (!$connection) {
     exit;
 }
 
-<<<<<<< Updated upstream
 //TODO make this valid using a single API file
 if (!$_SERVER['REQUEST_METHOD'] === 'POST' || !$_SERVER['REQUEST_METHOD'] === 'GET') {
     http_response_code(405);
@@ -39,30 +38,11 @@ if (!$_SERVER['REQUEST_METHOD'] === 'POST' || !$_SERVER['REQUEST_METHOD'] === 'G
         $comment = mysqli_real_escape_string($connection, $_POST['comment']);
 
         $sql = "INSERT INTO
-=======
-if (!$_SERVER['REQUEST_METHOD'] === 'POST') {
-    http_response_code(405);
-    echo "forbiden method";
-} else {
-    //required 
-    $name = mysqli_real_escape_string($connection, $_POST['name']);
-    $email = mysqli_real_escape_string($connection, $_POST['email']);
-    $phoneNumber = mysqli_real_escape_string($connection, $_POST['phoneNumber']);
-    $formation = mysqli_real_escape_string($connection, $_POST['formation']);
-
-    //optional
-    $birthday = mysqli_real_escape_string($connection, $_POST['birthday']);
-    $gender = mysqli_real_escape_string($connection, $_POST['gender']);
-    $comment = mysqli_real_escape_string($connection, $_POST['comment']);
-
-    $sql = "INSERT INTO
->>>>>>> Stashed changes
             inscriptions
             (name, email, phoneNumber, birthday, gender, formation, comment)
             VALUES
             ('$name', '$email', '$phoneNumber', '$birthday', '$gender', '$formation', '$comment')";
 
-<<<<<<< Updated upstream
         if (mysqli_query($connection, $sql)) {
             echo json_encode(["success" => "data get success"]);
         } else {
@@ -86,14 +66,4 @@ if (!$_SERVER['REQUEST_METHOD'] === 'POST') {
 
         mysqli_close($connection);
     }
-=======
-    if (mysqli_query($connection, $sql)) {
-        echo json_encode(["success" => "data get success"]);
-    } else {
-        http_response_code(500);
-        echo json_encode(["error" => "ERROR: " . mysqli_error($connection)]);
-    }
-
-    mysqli_close($connection);
->>>>>>> Stashed changes
 }
